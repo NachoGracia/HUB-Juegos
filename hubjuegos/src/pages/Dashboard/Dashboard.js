@@ -14,12 +14,12 @@ const template = () => `
         </figure>
       </li>
       <li>
-        <figure>
+        <figure id="navigateTresEnRaya">
           <img
-            src="https://res.cloudinary.com/dq186ej4c/image/upload/v1689761641/pngwing.com_1_iq8zfk.png"
-            alt=" go to wacka topo game"
+            src="https://upload.wikimedia.org/wikipedia/commons/3/32/Tic_tac_toe.svg"
+            alt=" go to tres en raya"
           />
-          <h2>WACKA TOPO</h2>
+          <h2>TRES EN RAYA</h2>
         </figure>
       </li>
       <li>
@@ -39,6 +39,13 @@ const addEventListeners = () => {
   const navigatePokemon = document.getElementById("navigatePokemon");
   navigatePokemon.addEventListener("click", () => {
     initControler("Pokemon");
+  });
+
+  //!   AÑANDIR EL ESCUCHADOR AL BOTÓN PARA LLEVARME AL TRES EN RAYA
+
+  const navigateTresEnRaya = document.getElementById("navigateTresEnRaya");
+  navigateTresEnRaya.addEventListener("click", () => {
+    initControler("TresEnRaya");
   });
 };
 

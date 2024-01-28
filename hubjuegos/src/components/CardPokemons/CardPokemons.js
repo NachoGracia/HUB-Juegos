@@ -43,19 +43,12 @@ const addListeners = (data) => {
           fav: newFavArray,
         });
 
-        /** inportante a ese span quitarle la clase like para asi se le quite el rojo */
         span.classList.toggle("like");
       } else {
-        /** En caso de no incluir ese id en el arrray de fav del user logado del contesto lo que tenemos que hacer es meter el id de ese figire
-         * en el array de fav de los datos de usuario del contesto y de nuevo utilizamos la funcion de set para modificar el estado
-         */
         const appUser = getUserData();
         appUser.fav.push(e.target.parentNode.id);
         setUserData(appUser);
 
-        /** En este caso metemos la clase like al elemento que hemos hecho fav, recordar que el metodo toggle lo hace solo el quitar o poner la clase
-         * en caso de que la tenga o no
-         */
         span.classList.toggle("like");
       }
     });

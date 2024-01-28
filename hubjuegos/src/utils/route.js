@@ -1,5 +1,10 @@
 import { getUser } from "../global/state/globalState";
-import { Login, PrintPokemonPage, printTemplateDashboard } from "../pages";
+import {
+  Login,
+  PrintPokemonPage,
+  printTemplateDashboard,
+  PrintTresEnRayaPage,
+} from "../pages";
 
 export const initControler = (pagesRender) => {
   switch (pagesRender) {
@@ -13,8 +18,9 @@ export const initControler = (pagesRender) => {
     case "Dashboard":
       printTemplateDashboard();
       break;
-    case "Topo":
-      "Topo()";
+    //!  INTRODUCIR EL CASE DE TRES EN RAYA
+    case "TresEnRaya":
+      PrintTresEnRayaPage();
       break;
     case "Login":
       Login();
