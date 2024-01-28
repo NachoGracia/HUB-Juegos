@@ -1,5 +1,5 @@
 
-body {
+body > {
     text-align: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
@@ -13,7 +13,7 @@ body {
 
 h1 {
     font-size: 36px;
-    color: #fff;
+    color: #000000;
 }
 
 .game-container {
@@ -46,7 +46,7 @@ h1 {
 .message {
     font-size: 24px;
     margin: 20px 0;
-    color: #fff;
+    color: #000000;
 }
 
 .reset-button {

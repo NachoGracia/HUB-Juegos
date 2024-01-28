@@ -23,12 +23,12 @@ const template = () => `
         </figure>
       </li>
       <li>
-        <figure>
+        <figure id="navigatePPT">
           <img
-            src="https://res.cloudinary.com/dq186ej4c/image/upload/v1689761735/6168776_kfna36.png"
-            alt="go to memory game"
+            src="https://previews.123rf.com/images/chuckchee/chuckchee1509/chuckchee150900147/44684172-pixel-art-hands-showing-rock-paper-scissors-game-gestures.jpg"
+            alt="go to piedra papel tijera"
           />
-          <h2>MEMORY GAME</h2>
+          <h2>PIEDRA PAPEL TIJERA</h2>
         </figure>
       </li>
     </ul>
@@ -46,6 +46,12 @@ const addEventListeners = () => {
   const navigateTresEnRaya = document.getElementById("navigateTresEnRaya");
   navigateTresEnRaya.addEventListener("click", () => {
     initControler("TresEnRaya");
+  });
+
+  //!     AÑADIR ESCUCHADOR AL BOTON PARA LLEVARME AL PPT
+  const navigatePPT = document.getElementById("navigatePPT");
+  navigatePPT.addEventListener("click", () => {
+    initControler("PiedraPapelTijera");
   });
 };
 

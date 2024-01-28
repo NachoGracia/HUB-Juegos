@@ -1,5 +1,3 @@
-// changeColor.js ------> src/utils/changeColor.js
-
 export const changeColorRGB = () => {
   const randomNumber = (min, max) => {
     min = Math.ceil(min);

@@ -4,6 +4,7 @@ import {
   PrintPokemonPage,
   printTemplateDashboard,
   PrintTresEnRayaPage,
+  PrintPPT,
 } from "../pages";
 
 export const initControler = (pagesRender) => {
@@ -25,8 +26,9 @@ export const initControler = (pagesRender) => {
     case "Login":
       Login();
       break;
-    case "Memory":
-      "Memory()";
+    //! CASE DE PPT
+    case "PiedraPapelTijera":
+      PrintPPT();
       break;
   }
 };

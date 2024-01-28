@@ -26,3 +26,5 @@ export const PrintTresEnRayaPage = () => {
 };
 
 //! AHORA ESTA FUNCIÓN EXPORT EN BARRIL EN EL INDEX
+
+//! LOGICA JUEGO IMPORTADA ARRIBA
