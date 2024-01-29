@@ -1,17 +1,16 @@
 export const jugada = () => {
   const opciones = ["piedra", "papel", "tijera"]; // así las posiciones se pueden comparar con la tiradaOrdenador
-  let tiradaJugador = 2; // no const para poderla modificar con click
+  let tiradaJugador = 0; //! no const para poderla modificar con click
 
-  const tiradaOrdenador = Math.floor(Math.random() * 3); // crear nº aleatorio entre 0 y 2 ( 0, 1 y 2)
-
-  const obtenerResultado = (jugador, ordenador) => {
-    jugador = tiradaJugador; //!!!!!!!!!!!!!!       HACE FALTA??
-    if (ordenador === jugador) {
+  const obtenerResultado = () => {
+    const tiradaOrdenador = Math.floor(Math.random() * 3); // crear nº aleatorio entre 0 y 2 ( 0, 1 y 2)  //!ANTES ARRIBA Y NO FUNCIONABA?
+    console.log("Ordenador:", opciones[tiradaOrdenador]); //! ANTES ABAJO Y NO FUNCIONABA?
+    if (tiradaOrdenador === tiradaJugador) {
       return `Empate`;
     } else if (
-      (ordenador === 0 && jugador === 1) ||
-      (ordenador === 1 && jugador === 2) ||
-      (ordenador === 2 && jugador === 0)
+      (tiradaOrdenador === 0 && tiradaJugador === 1) ||
+      (tiradaOrdenador === 1 && tiradaJugador === 2) ||
+      (tiradaOrdenador === 2 && tiradaJugador === 0)
     ) {
       return `Gana el jugador`;
     } else {
@@ -19,10 +18,32 @@ export const jugada = () => {
     }
   };
 
-  console.log("Jugador:", opciones[tiradaJugador]); // estamos accediento al array en la posición de tiradaJugador
-  console.log("Ordenador:", opciones[tiradaOrdenador]); // lo mismo
+  const mostrarResultado = () => {
+    const resultadoMostrado = document.getElementById("resultado"); // apunto al elemento en el DOM
 
-  const resultado = obtenerResultado(tiradaJugador, tiradaOrdenador); //entonces aquí se valoran 0 1 y 2
-  console.log(resultado);
+    const resultado = obtenerResultado(); // DEL RETURN DE LA FUNCION DE ARRIBA
+    console.log(resultado);
+
+    resultadoMostrado.textContent = resultado;
+  };
+
+  //! SELECCIÓN DE ELEMENTOS PINTADOS:
+  const eleccionPiedra = document.getElementById("btn1");
+  const eleccionPapel = document.getElementById("btn2");
+  const eleccionTijera = document.getElementById("btn3");
+  const resultadoMostrado = document.getElementById("resultado");
+  //! ESCUCHADORES A LOS BOTONES, CON LA CONDICIÓN DEL let tiradajugador.
+  eleccionPiedra.addEventListener("click", () => {
+    tiradaJugador = 0;
+
+    mostrarResultado();
+  });
+  eleccionPapel.addEventListener("click", () => {
+    tiradaJugador = 1;
+    mostrarResultado();
+  });
+  eleccionTijera.addEventListener("click", () => {
+    tiradaJugador = 2;
+    mostrarResultado();
+  });
 };
-jugada();

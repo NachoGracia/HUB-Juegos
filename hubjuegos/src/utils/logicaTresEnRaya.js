@@ -10,8 +10,8 @@ export const iniciarTresEnRaya = () => {
   let computerPlayer = "O";
   let gameBoard = ["", "", "", "", "", "", "", "", ""];
   let gameActive = true;
-
-  function handleCellClick(e) {
+  //! cambio a =>
+  const handleCellClick = (e) => {
     const cell = e.target;
     const cellIndex = Array.from(cells).indexOf(cell);
 
@@ -29,9 +29,9 @@ export const iniciarTresEnRaya = () => {
       message.textContent = "EMPATE! 🙄 ";
       gameActive = false;
     }
-  }
+  };
 
-  function computerMove() {
+  const computerMove = () => {
     const emptyCells = gameBoard.reduce((acc, cell, index) => {
       if (cell === "") {
         acc.push(index);
@@ -51,9 +51,9 @@ export const iniciarTresEnRaya = () => {
       message.textContent = "EMPATE! 🙄 ";
       gameActive = false;
     }
-  }
+  };
 
-  function getBestMove() {
+  const getBestMove = () => {
     let bestScore = -Infinity;
     let bestMove = null;
 
@@ -71,9 +71,9 @@ export const iniciarTresEnRaya = () => {
     }
 
     return bestMove;
-  }
+  };
 
-  function minimax(board, depth, isMaximizing) {
+  const minimax = (board, depth, isMaximizing) => {
     const scores = {
       X: -1,
       O: 1,
@@ -108,9 +108,9 @@ export const iniciarTresEnRaya = () => {
       }
       return bestScore;
     }
-  }
+  };
 
-  function checkWinner(board) {
+  const checkWinner = (board) => {
     const winPatterns = [
       [0, 1, 2],
       [3, 4, 5],
@@ -134,15 +134,15 @@ export const iniciarTresEnRaya = () => {
     } else {
       return "draw";
     }
-  }
+  };
 
-  function makeMove(index, player) {
+  const makeMove = (index, player) => {
     gameBoard[index] = player;
     cells[index].textContent = player;
     cells[index].classList.add(player);
-  }
+  };
 
-  function handleResetClick() {
+  const handleResetClick = () => {
     gameBoard = ["", "", "", "", "", "", "", "", ""];
     gameActive = true;
     currentPlayer = "X";
@@ -151,7 +151,7 @@ export const iniciarTresEnRaya = () => {
       cell.textContent = "";
       cell.classList.remove("X", "O");
     });
-  }
+  };
 
   cells.forEach((cell) => cell.addEventListener("click", handleCellClick));
   resetButton.addEventListener("click", handleResetClick);

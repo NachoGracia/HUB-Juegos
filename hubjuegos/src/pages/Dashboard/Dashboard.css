@@ -42,12 +42,12 @@
           transform: scale(0.98);
         }
         & img {
-          width: 60%;
+          width: 70%;
         }
       }
     }
   }
-
+ 
   /*AGREGAR ESTILO ADICIONAL CON .DARK*/
 
   #containerDashboard.dark {
