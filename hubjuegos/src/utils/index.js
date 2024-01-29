@@ -6,3 +6,4 @@ export * from "./paginacion";
 export * from "./dataPokemon";
 export * from "./typePokemon";
 //! EXPORT DE LÓGICA PARA LLEVARLO A LA PÁGINA
+export * from "./logicaTresEnRaya";

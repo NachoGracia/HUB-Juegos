@@ -1,5 +1,5 @@
+import { iniciarTresEnRaya } from "../../utils";
 import "./TresEnRaya.css";
-import { iniciarTresEnRaya } from "./logicaTresEnRaya";
 
 //! CREAR LO QUE PINTA EN EL HTML:
 
