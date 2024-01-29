@@ -26,7 +26,7 @@ export const jugada = () => {
     const resultado = obtenerResultado(); // DEL RETURN DE LA FUNCION DE ARRIBA
     console.log(resultado);
 
-    resultadoMostrado.textContent = resultado;
+    resultadoMostrado.textContent = resultado; // AÑADO EL TEXTO DEL RETURN EN "RESULTADO" DEL DOM
   };
 
   //! SELECCIÓN DE ELEMENTOS PINTADOS: LO HE MIRADO DE LA LOGICA DEL 3 EN RAYA
