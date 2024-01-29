@@ -29,32 +29,40 @@
   
   .grass {
     background-color: #63bb5b75;
+    
   }
   figure.grass {
     border: 10px solid #63bb5b;
+    box-shadow: 6px 7px 13px -5px rgba(0,0,0,0.44);
   }
   
   figure.bug {
     border: 10px solid #8fc12c;
+    box-shadow: 6px 7px 13px -5px rgba(0,0,0,0.44);
+   
   }
   .bug {
     background-color: #8fc12c80;
+    
   }
   
   figure.dark {
     border: 10px solid #5a5366;
+    box-shadow: 6px 7px 13px -5px rgba(0,0,0,0.44);
   }
   .dark {
     background-color: #5a536687;
   }
   figure.dragon {
     border: 10px solid #0a6dc4;
+    box-shadow: 6px 7px 13px -5px rgba(0,0,0,0.44);
   }
   .dragon {
     background-color: #0a6dc482;
   }
   figure.electric {
     border: 10px solid #f3d13b;
+    box-shadow: 6px 7px 13px -5px rgba(0,0,0,0.44);
   }
   .electric {
     background-color: #f3d13b75;
@@ -62,12 +70,14 @@
   
   figure.fairy {
     border: 10px solid #ec8fe6;
+    box-shadow: 6px 7px 13px -5px rgba(0,0,0,0.44);
   }
   .fairy {
     background-color: #ec8fe67e;
   }
   figure.fighting {
     border: 10px solid #ce4068;
+    box-shadow: 6px 7px 13px -5px rgba(0,0,0,0.44);
   }
   .fighting {
     background-color: #ce406884;
@@ -75,6 +85,7 @@
   
   figure.fire {
     border: 10px solid #ff9b54;
+    box-shadow: 6px 7px 13px -5px rgba(0,0,0,0.44);
   }
   .fire {
     background-color: #ff9b546f;
@@ -82,12 +93,14 @@
   
   figure.flying {
     border: 10px solid #8fa8dd;
+    box-shadow: 6px 7px 13px -5px rgba(0,0,0,0.44);
   }
   .flying {
     background-color: #8fa8dd7c;
   }
   figure.ghost {
     border: 10px solid #5269ac;
+    box-shadow: 6px 7px 13px -5px rgba(0,0,0,0.44);
   }
   .ghost {
     background-color: #5269ac7e;
@@ -95,18 +108,21 @@
   
   figure.ground {
     border: 10px solid #d97746;
+    box-shadow: 6px 7px 13px -5px rgba(0,0,0,0.44);
   }
   .ground {
     background-color: #d977467c;
   }
   figure.ice {
     border: 10px solid #74cec1;
+    box-shadow: 6px 7px 13px -5px rgba(0,0,0,0.44);
   }
   .ice {
     background-color: #74cec17e;
   }
   figure.normal {
     border: 10px solid #9099a1;
+    box-shadow: 6px 7px 13px -5px rgba(0,0,0,0.44);
   }
   .normal {
     background-color: #9099a17b;
@@ -114,6 +130,7 @@
   
   figure.poison {
     border: 10px solid #aa6ac8;
+    box-shadow: 6px 7px 13px -5px rgba(0,0,0,0.44);
   }
   .poison {
     background-color: #aa6ac87a;
@@ -121,12 +138,14 @@
   
   figure.psychic {
     border: 10px solid #f97176;
+    box-shadow: 6px 7px 13px -5px rgba(0,0,0,0.44);
   }
   .psychic {
     background-color: #f971767e;
   }
   figure.rock {
     border: 10px solid #c7b78b;
+    box-shadow: 6px 7px 13px -5px rgba(0,0,0,0.44);
   }
   .rock {
     background-color: #c7b78b78;
@@ -134,12 +153,14 @@
   
   figure.steel {
     border: 10px solid #5a8ea1;
+    box-shadow: 6px 7px 13px -5px rgba(0,0,0,0.44);
   }
   .steel {
     background-color: #5a8ea17e;
   }
   figure.water {
     border: 10px solid #4d91d5;
+    box-shadow: 6px 7px 13px -5px rgba(0,0,0,0.44);
   }
   .water {
     background-color: #4d91d575;

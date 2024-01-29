@@ -1,5 +1,7 @@
-import { jugada } from "./logicaPPT";
+import { jugada } from "../../utils";
+import "./PiedraPapelTijera.css";
 
+//! CREO TEMPLATE CON BOTONES Y RESULTADO
 const template = () => `
 <div class=contenedor>
 <div class=botones>
@@ -11,6 +13,7 @@ const template = () => `
 <div id="resultado"></div>
 </div>`;
 
+//! SELECCIONO EN EL DOM Y LE PINTO TEMPLATE, DESPUÉS INVOCO FUNCIÓN DEL JUEGO (EN UTILS, BARRIL)
 export const PrintPPT = () => {
   document.querySelector("main").innerHTML = template();
   jugada();

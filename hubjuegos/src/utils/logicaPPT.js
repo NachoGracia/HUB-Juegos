@@ -1,3 +1,5 @@
+//!  EXPORT DE TODA LA LÓGICA AL INDEX DE BARRIL, PARA LLEVARLA A PÁGINA DE JUEGO.
+
 export const jugada = () => {
   const opciones = ["piedra", "papel", "tijera"]; // así las posiciones se pueden comparar con la tiradaOrdenador
   let tiradaJugador = 0; //! no const para poderla modificar con click
@@ -27,7 +29,7 @@ export const jugada = () => {
     resultadoMostrado.textContent = resultado;
   };
 
-  //! SELECCIÓN DE ELEMENTOS PINTADOS:
+  //! SELECCIÓN DE ELEMENTOS PINTADOS: LO HE MIRADO DE LA LOGICA DEL 3 EN RAYA
   const eleccionPiedra = document.getElementById("btn1");
   const eleccionPapel = document.getElementById("btn2");
   const eleccionTijera = document.getElementById("btn3");
@@ -35,7 +37,6 @@ export const jugada = () => {
   //! ESCUCHADORES A LOS BOTONES, CON LA CONDICIÓN DEL let tiradajugador.
   eleccionPiedra.addEventListener("click", () => {
     tiradaJugador = 0;
-
     mostrarResultado();
   });
   eleccionPapel.addEventListener("click", () => {

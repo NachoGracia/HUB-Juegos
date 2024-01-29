@@ -41,9 +41,7 @@ const addListeners = () => {
 
   const cambioBlancoNegro = document.getElementById("white/black"); // apunto al botón:
   cambioBlancoNegro.addEventListener("click", () => {
-    document.body.classList.toggle("dark"); //! añadir .dark al css general y en particular al fondo de los figure del dashboard
-
-    //! ME LO LLEVO AL DASHBOARD PARA PODERLO LLAMAR DESDE AHÍ Y CAMBIAR EL FONDO DE LOS FIGURE
+    document.body.classList.toggle("dark"); //! añadir .dark al css general y asi me cambia fondo.
   });
 
   //! ---------------->COLOR CHANGE RANDOM------ evento click del boton de cambio de color
