@@ -1,11 +1,17 @@
+import {
+  gettiradaOrdenador,
+  settiradaOrdenador,
+} from "../global/state/logicaPPT.state";
+import { opciones } from "../global/data/logicaPPT.data";
 //!  EXPORT DE TODA LA LÓGICA AL INDEX DE BARRIL, PARA LLEVARLA A PÁGINA DE JUEGO.
 
 export const jugada = () => {
-  const opciones = ["piedra", "papel", "tijera"]; // así las posiciones se pueden comparar con la tiradaOrdenador
+  opciones; // así las posiciones se pueden comparar con la tiradaOrdenador
   let tiradaJugador = 0; //! no const para poderla modificar con click
 
   const obtenerResultado = () => {
-    const tiradaOrdenador = Math.floor(Math.random() * 3); // crear nº aleatorio entre 0 y 2 ( 0, 1 y 2)  //!ANTES ARRIBA Y NO FUNCIONABA?
+    settiradaOrdenador(); // crear nº aleatorio entre 0 y 2 ( 0, 1 y 2)  //!ANTES ARRIBA Y NO FUNCIONABA?
+    let tiradaOrdenador = gettiradaOrdenador();
     console.log("Ordenador:", opciones[tiradaOrdenador]); //! ANTES ABAJO Y NO FUNCIONABA?
     if (tiradaOrdenador === tiradaJugador) {
       return `Empate`;
