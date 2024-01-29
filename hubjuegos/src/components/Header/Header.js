@@ -3,17 +3,20 @@ import { changeColorRGB } from "../../utils";
 import { initControler } from "../../utils/route";
 import "./Header.css";
 
-//!-------------------------------------------------------------------
-//? ------------------1) TEMPLATE ------------------------------------
-//!-------------------------------------------------------------------
-
 const template = () => `
-  <img
+
+
+<img
     src="https://res.cloudinary.com/dq186ej4c/image/upload/v1682679162/header_giqdug.jpg"
     alt="title hub game website (app)"
     class="logo"
   />
   <nav>
+  <img
+src="https://img.freepik.com/premium-photo/black-white-circle-black-background_893012-179745.jpg"
+alt="switch blanco/negro"
+id="white/black"
+/>
     <img
       src="https://res.cloudinary.com/dq186ej4c/image/upload/v1682684561/changeColor_tat29q.png"
       alt=" change to style mode page"
@@ -29,15 +32,20 @@ const template = () => `
       alt="logout"
       id="buttonLogout"
     />
+    
   </nav>
 `;
-//!-----------------------------------------------------------------------------------
-//? ----------------------- 2 ) Añadir los eventos con sus escuchadores---------------
-//!-----------------------------------------------------------------------------------
+
 const addListeners = () => {
-  /** Para cada elemento grafico que son los botones que hacen acciones con el usuario
-   * le meteremos su escuchador
-   */
+  //! AÑADO EL ESCUCHADOR PARA EL TOGLLE: evennto click
+
+  const cambioBlancoNegro = document.getElementById("white/black"); // apunto al botón:
+  cambioBlancoNegro.addEventListener("click", () => {
+    document.body.classList.toggle("dark"); //! añadir .dark al css general y en particular al fondo de los figure del dashboard
+
+    //! ME LO LLEVO AL DASHBOARD PARA PODERLO LLAMAR DESDE AHÍ Y CAMBIAR EL FONDO DE LOS FIGURE
+  });
+
   //! ---------------->COLOR CHANGE RANDOM------ evento click del boton de cambio de color
   const changeColor = document.getElementById("changeColor");
   changeColor.addEventListener("click", (e) => {

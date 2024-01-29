@@ -19,10 +19,10 @@ export const jugada = () => {
     }
   };
 
-  //console.log("Jugador:", opciones[tiradaJugador]); // estamos accediento al array en la posición de tiradaJugador
-  //console.log("Ordenador:", opciones[tiradaOrdenador]); // lo mismo
+  console.log("Jugador:", opciones[tiradaJugador]); // estamos accediento al array en la posición de tiradaJugador
+  console.log("Ordenador:", opciones[tiradaOrdenador]); // lo mismo
 
   const resultado = obtenerResultado(tiradaJugador, tiradaOrdenador); //entonces aquí se valoran 0 1 y 2
-  //console.log(resultado);
+  console.log(resultado);
 };
 jugada();

@@ -53,6 +53,13 @@ const addEventListeners = () => {
   navigatePPT.addEventListener("click", () => {
     initControler("PiedraPapelTijera");
   });
+
+  //! ME HE TRAIDO lA CONSTANTE, BUSCO EN EL TEMPLATE DE ARRIBA Y LE AÑADO LA CLASE "dark"
+  /*const cambioBlancoNegro = document.getElementById("containerDashboard");
+  containerDashboard.classList.add("dark"); // añado clase .dark
+  cambioBlancoNegro.addEventListener("click", () => {
+    containerDashboard.classlist.toogle("dark");
+  });*/
 };
 
 export const printTemplateDashboard = () => {

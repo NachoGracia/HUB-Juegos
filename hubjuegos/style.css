@@ -32,3 +32,10 @@
       height: 10vh;
     }
   }
+  /*añadir la case body.dark*/
+
+  body.dark{
+
+    background-color: black;
+
+  }

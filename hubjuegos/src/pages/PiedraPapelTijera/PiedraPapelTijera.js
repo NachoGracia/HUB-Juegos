@@ -12,8 +12,8 @@ const template = () => `
 export const PrintPPT = () => {
   document.querySelector("main").innerHTML = template();
 
-  const botonPiedra = document.getElementById("btn1");
-
+  const botonPiedra = document.getElementById("btn1"); // Busco el boton 1
+  // Le asigno un escuchador tipo click
   botonPiedra.addEventListener("click", () => {
     const tiradaJugador = 0;
     const resultado = jugada(tiradaJugador);
