@@ -165,3 +165,8 @@
   .water {
     background-color: #4d91d575;
   }
+
+  body.dark figure{
+
+    box-shadow: 6px 7px 13px -5px rgba(255, 255, 255, 0.91);
+  }
