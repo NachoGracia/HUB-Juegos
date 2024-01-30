@@ -17,7 +17,7 @@ const template = () => `<div class="game-container">
     <div class="cell" data-cell></div>
 </div>
 <div class="message" id="message">ERES X, TE TOCA!</div>
-<button class="reset-button" id="reset">RESET GAME</button>
+<button class="reset-button" id="reset">RESET</button>
 </div>`;
 
 //! CREADO CON TEMPLATE => innerHTML:

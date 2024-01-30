@@ -10,7 +10,12 @@ const template = () => `
 <button id="btn3">Tijera ✂</button>
 </div>
 
-<div id="resultado"></div>
+<div class="wrapper">
+    <div class="typing-demo" id="resultado">
+      
+    </div>
+</div>
+</div>
 </div>`;
 
 //! SELECCIONO EN EL DOM Y LE PINTO TEMPLATE, DESPUÉS INVOCO FUNCIÓN DEL JUEGO (EN UTILS, BARRIL)

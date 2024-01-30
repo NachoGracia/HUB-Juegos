@@ -44,7 +44,6 @@ const addListeners = () => {
     document.body.classList.toggle("dark"); //! añadir .dark al css general y asi me cambia fondo.
   });
 
-  //! ---------------->COLOR CHANGE RANDOM------ evento click del boton de cambio de color
   const changeColor = document.getElementById("changeColor");
   changeColor.addEventListener("click", (e) => {
     /** en este caso lo que hacemos el generar un color y cambiar el stylo del background del body */
@@ -52,7 +51,6 @@ const addListeners = () => {
     document.body.style.background = color;
   });
 
-  //! ----------------> DASHBOARD ------------- evento click del boton que nos lleva a los juegos
   const buttonDashboard = document.getElementById("buttonDashboard");
   buttonDashboard.addEventListener("click", (e) => {
     // llamamos al initController con el dashboard para que pinte la pagina del dashboard
