@@ -38,6 +38,15 @@ export const jugada = () => {
     resultadoMostrado.textContent = resultado; //! AÑADO EL TEXTO DEL RETURN EN "RESULTADO" DEL DOM
   };
 
+  //! función para escribir el resultado del ordenador en el p:
+  const mostrarResultadoOrdenador = () => {
+    const resultadoMostradoOrdenador = document.getElementById("ordenador");
+
+    resultadoMostradoOrdenador.textContent = `El ordenador ha sacado: ${
+      opciones[gettiradaOrdenador()]
+    }`;
+  };
+
   //! SELECCIÓN DE ELEMENTOS PINTADOS: LO HE MIRADO DE LA LOGICA DEL 3 EN RAYA
   const eleccionPiedra = document.getElementById("btn1"); //! primer boton será piedra, que en [] será 0
   const eleccionPapel = document.getElementById("btn2"); //! segundo boton será papel, que en [] será 1
@@ -47,13 +56,16 @@ export const jugada = () => {
   eleccionPiedra.addEventListener("click", () => {
     tiradaJugador = 0;
     mostrarResultado();
+    mostrarResultadoOrdenador();
   });
   eleccionPapel.addEventListener("click", () => {
     tiradaJugador = 1;
     mostrarResultado();
+    mostrarResultadoOrdenador();
   });
   eleccionTijera.addEventListener("click", () => {
     tiradaJugador = 2;
     mostrarResultado();
+    mostrarResultadoOrdenador();
   });
 };

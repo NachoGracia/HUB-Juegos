@@ -1,9 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 
 .contenedor {
   display: flex;
@@ -11,15 +5,22 @@
   flex-direction: column;
   align-items: center; 
   justify-content: center; 
-  
- 
   margin-top: 0px;
+ 
 }
 
 .botones {
   display: flex;
   justify-content: center;
   margin-top: 20px; 
+}
+body.dark #resultado {
+
+  color: rgb(253,208,46);
+}
+
+body.dark #ordenador{
+  color: rgb(253,208,46);
 }
 
 #btn1,
@@ -36,18 +37,27 @@
   place-items: center;
 }
 
+#ordenador{
+margin-top: 70px;
+
+}
+
 #resultado{
 font-family: "Press Start 2P", system-ui, cursive;
+font-size: 20px;
+margin-top: 150px;
+
+
+}
+#ordenador{
+  font-family: "Press Start 2P", system-ui, cursive;
 font-size: 20px;
 
 
 }
 
 
-body.dark #resultado {
 
-  color: white;
-}
 
 button {
   display: flex;
@@ -75,7 +85,7 @@ button:hover {
 
 body.dark button{
 
-  box-shadow: 5px 5px 0px 0px rgba(255, 255, 255, 0.462);
+  box-shadow: 5px 5px 0px 0px rgb(253,208,46);
 
 
 }

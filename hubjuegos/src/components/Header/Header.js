@@ -6,29 +6,25 @@ import "./Header.css";
 const template = () => `
 
 
-<img
-    src="https://res.cloudinary.com/dq186ej4c/image/upload/v1682679162/header_giqdug.jpg"
-    alt="title hub game website (app)"
-    class="logo"
-  />
+
   <nav>
   <img
-src="https://img.freepik.com/premium-photo/black-white-circle-black-background_893012-179745.jpg"
+src="https://cdn-icons-png.flaticon.com/512/5261/5261864.png"
 alt="switch blanco/negro"
 id="white/black"
 />
     <img
-      src="https://res.cloudinary.com/dq186ej4c/image/upload/v1682684561/changeColor_tat29q.png"
+      src="https://w7.pngwing.com/pngs/793/136/png-transparent-color-wheel-computer-icons-color-picker-angle-color-ral-colour-standard.png"
       alt=" change to style mode page"
       id="changeColor"
     />
     <img
-      src="https://res.cloudinary.com/dq186ej4c/image/upload/v1682685633/home_nekvs0.png"
+      src="https://png.pngtree.com/element_our/20190528/ourmid/pngtree-game-console-game-icon-image_1174023.jpg"
       alt=" navigate to home app"
       id="buttonDashboard"
     />
     <img
-      src="https://res.cloudinary.com/dq186ej4c/image/upload/v1682679055/logout_arz0gw.png"
+      src="https://cdn-icons-png.flaticon.com/512/4400/4400629.png"
       alt="logout"
       id="buttonLogout"
     />
