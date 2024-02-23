@@ -25,7 +25,7 @@ const template = () => `
       <li>
         <figure id="navigatePPT">
           <img
-            src="https://previews.123rf.com/images/chuckchee/chuckchee1509/chuckchee150900147/44684172-pixel-art-hands-showing-rock-paper-scissors-game-gestures.jpg"
+            src="https://res.cloudinary.com/diyouj1se/image/upload/v1707145845/hub-juegos/mktxo5u9ig1s8jemsglg.png"
             alt="go to piedra papel tijera"
           />
           <h2>PIEDRA PAPEL TIJERA</h2>

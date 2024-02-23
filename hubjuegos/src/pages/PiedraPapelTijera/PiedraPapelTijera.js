@@ -3,7 +3,7 @@ import "./PiedraPapelTijera.css";
 
 //! CREO TEMPLATE CON BOTONES Y RESULTADO
 const template = () => `
-<div class=contenedor>
+<div id="contenedor">
 
 <div class=botones>
 <button id="btn1">Piedra 💎</button>

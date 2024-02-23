@@ -1,91 +1,112 @@
 
-.contenedor {
+body > {
+  text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
-  
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #000000;
+}
+
+#contenedor {
+  height: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:column;
   align-items: center; 
   justify-content: center; 
   margin-top: 0px;
  
 }
-
-.botones {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px; 
-}
-body.dark #resultado {
-
-  color: rgb(253,208,46);
-}
-
-body.dark #ordenador{
-  color: rgb(253,208,46);
-}
-
 #btn1,
 #btn2,
 #btn3 {
+  display: inline-block;
   margin: 0 10px; 
   padding: 10px 20px; 
 }
 
-.wrapper {
-  height: 20vh;
-  /*This part is important for centering*/
-  display: grid;
-  place-items: center;
-}
-
-#ordenador{
-margin-top: 70px;
-
-}
-
 #resultado{
-font-family: "Press Start 2P", system-ui, cursive;
-font-size: 20px;
-margin-top: 150px;
-
-
-}
-#ordenador{
   font-family: "Press Start 2P", system-ui, cursive;
-font-size: 20px;
+  font-size: 20px;
+  margin-top: 150px;
+  
+  
+  }
+  #ordenador{
+   justify-content: center;
+    font-family: "Press Start 2P", system-ui, cursive;
+  font-size: 20px;
+  margin-top: 80px;
+  
+  
+  
+  }
 
-
-}
-
-
-
-
-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
-  text-decoration: none;
-  color: #333333;
-  font-size: 18px;
-  border-radius: 0px;
-  width: 200px;
-  height: 40px;
-  font-weight: bold;
-  border: 2px solid #333333;
-  transition: 0.3s;
-  box-shadow: 5px 5px 0px 0px rgba(51, 51, 51, 1);
-  background-color: #ffffff;
-}
-
-button:hover {
-  box-shadow: 0 0 #333;
-  color: #fff;
-  background-color: #333;
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    text-decoration: none;
+    color: #333333;
+    font-size: 18px;
+    border-radius: 0px;
+    width: 200px;
+    height: 40px;
+    font-weight: bold;
+    border: 2px solid #333333;
+    transition: 0.3s;
+    box-shadow: 5px 5px 0px 0px rgba(51, 51, 51, 1);
+    background-color: #ffffff;
+  }
+  
+  button:hover {
+    box-shadow: 0 0 #333;
+    color: #fff;
+    background-color: #333;
+  }
+  
+ /* 
+ ESTO ME ROMPE
+ 
+ .botones {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+  }*/
+  
+  
+  
+  
+  #btn1,
+  #btn2,
+  #btn3 {
+    margin: 0 10px; 
+    pad
+  body.dark button{
+  
+    box-shadow: 5px 5px 0px 0px rgb(253,208,46);
+  }
 }
 
 body.dark button{
 
   box-shadow: 5px 5px 0px 0px rgb(253,208,46);
-
-
 }
+
+  
+  body.dark #resultado {
+  
+    color: rgb(253,208,46);
+  }
+  
+  body.dark #ordenador{
+    color: rgb(253,208,46);
+  }
+
+  
+  

@@ -19,7 +19,7 @@ id="white/black"
       id="changeColor"
     />
     <img
-      src="https://png.pngtree.com/element_our/20190528/ourmid/pngtree-game-console-game-icon-image_1174023.jpg"
+      src="https://www.clipartmax.com/png/middle/189-1898756_arcade-icon-arcade-game.png"
       alt=" navigate to home app"
       id="buttonDashboard"
     />

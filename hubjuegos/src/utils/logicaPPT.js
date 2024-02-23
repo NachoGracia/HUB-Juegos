@@ -14,6 +14,11 @@ export const jugada = () => {
   const obtenerResultado = () => {
     settiradaOrdenador(); //! viene de state, crea un nº aleatorio entre 0 y 2, para comparar con [] de opciones
     let tiradaOrdenador = gettiradaOrdenador(); //! lo trae de state y hace el random
+
+    setTimeout(() => {
+      tiradaOrdenador(); // Llama a la función tiradaOrdenador después de 5000 milisegundos (5 segundos)
+    }, 5000);
+
     console.log("Ordenador:", opciones[tiradaOrdenador]); //! para verlo por consola
     if (tiradaOrdenador === tiradaJugador) {
       return `Empate`;
