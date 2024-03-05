@@ -13,7 +13,9 @@ const template = () => `
 <div><p id="ordenador"></p></div>
 
 <div class="wrapper">
-    <div class="typing-demo" id="resultado">
+    <div class="typing-demo">
+    <p id="resultado">
+    </p>
     
       
     </div>

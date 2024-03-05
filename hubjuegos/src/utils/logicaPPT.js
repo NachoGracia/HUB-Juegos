@@ -15,27 +15,27 @@ export const jugada = () => {
     settiradaOrdenador(); //! viene de state, crea un nº aleatorio entre 0 y 2, para comparar con [] de opciones
     let tiradaOrdenador = gettiradaOrdenador(); //! lo trae de state y hace el random
 
-    setTimeout(() => {
-      tiradaOrdenador(); // Llama a la función tiradaOrdenador después de 5000 milisegundos (5 segundos)
-    }, 5000);
+    // setTimeout(() => {
+    //   tiradaOrdenador(); // Llama a la función tiradaOrdenador después de 5000 milisegundos (5 segundos)
+    // }, 5000);
 
     console.log("Ordenador:", opciones[tiradaOrdenador]); //! para verlo por consola
     if (tiradaOrdenador === tiradaJugador) {
-      return `Empate`;
+      return `Empate !`;
     } else if (
       (tiradaOrdenador === 0 && tiradaJugador === 1) ||
       (tiradaOrdenador === 1 && tiradaJugador === 2) ||
       (tiradaOrdenador === 2 && tiradaJugador === 0)
     ) {
-      return `Gana el jugador`;
+      return `Gana el jugador !`;
     } else {
-      return `Gana el ordenador`;
+      return `Gana el ordenador !`;
     }
   };
   //! función para escribir en el div de resultado:
 
   const mostrarResultado = () => {
-    const resultadoMostrado = document.getElementById("resultado"); //! apunto al elemento en el DOM
+    //! apunto al elemento en el DOM
 
     const resultado = obtenerResultado(); //! DEL RETURN DE LA FUNCION DE ARRIBA
     console.log(resultado); //! para verlo por consola

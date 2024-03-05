@@ -1,5 +1,5 @@
 import { getUser } from "../../global/state/globalState";
-import { changeColorRGB } from "../../utils";
+// import { changeColorRGB } from "../../utils";
 import { initControler } from "../../utils/route";
 import "./Header.css";
 
@@ -9,22 +9,18 @@ const template = () => `
 
   <nav>
   <img
-src="https://cdn-icons-png.flaticon.com/512/5261/5261864.png"
+src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgaGVpZ2h0PSIzNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iMS43NSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1saWdodGJ1bGItb2ZmIj48cGF0aCBkPSJNMTYuOCAxMS4yYy44LS45IDEuMi0yIDEuMi0zLjJhNiA2IDAgMCAwLTkuMy01Ii8+PHBhdGggZD0ibTIgMiAyMCAyMCIvPjxwYXRoIGQ9Ik02LjMgNi4zYTQuNjcgNC42NyAwIDAgMCAxLjIgNS4yYy43LjcgMS4zIDEuNSAxLjUgMi41Ii8+PHBhdGggZD0iTTkgMThoNiIvPjxwYXRoIGQ9Ik0xMCAyMmg0Ii8+PC9zdmc+"
 alt="switch blanco/negro"
 id="white/black"
 />
+  
     <img
-      src="https://w7.pngwing.com/pngs/793/136/png-transparent-color-wheel-computer-icons-color-picker-angle-color-ral-colour-standard.png"
-      alt=" change to style mode page"
-      id="changeColor"
-    />
-    <img
-      src="https://www.clipartmax.com/png/middle/189-1898756_arcade-icon-arcade-game.png"
+      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgaGVpZ2h0PSIzNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iMS43NSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1nYW1lcGFkLTIiPjxsaW5lIHgxPSI2IiB4Mj0iMTAiIHkxPSIxMSIgeTI9IjExIi8+PGxpbmUgeDE9IjgiIHgyPSI4IiB5MT0iOSIgeTI9IjEzIi8+PGxpbmUgeDE9IjE1IiB4Mj0iMTUuMDEiIHkxPSIxMiIgeTI9IjEyIi8+PGxpbmUgeDE9IjE4IiB4Mj0iMTguMDEiIHkxPSIxMCIgeTI9IjEwIi8+PHBhdGggZD0iTTE3LjMyIDVINi42OGE0IDQgMCAwIDAtMy45NzggMy41OWMtLjAwNi4wNTItLjAxLjEwMS0uMDE3LjE1MkMyLjYwNCA5LjQxNiAyIDE0LjQ1NiAyIDE2YTMgMyAwIDAgMCAzIDNjMSAwIDEuNS0uNSAyLTFsMS40MTQtMS40MTRBMiAyIDAgMCAxIDkuODI4IDE2aDQuMzQ0YTIgMiAwIDAgMSAxLjQxNC41ODZMMTcgMThjLjUuNSAxIDEgMiAxYTMgMyAwIDAgMCAzLTNjMC0xLjU0NS0uNjA0LTYuNTg0LS42ODUtNy4yNTgtLjAwNy0uMDUtLjAxMS0uMS0uMDE3LS4xNTFBNCA0IDAgMCAwIDE3LjMyIDV6Ii8+PC9zdmc+"
       alt=" navigate to home app"
       id="buttonDashboard"
     />
     <img
-      src="https://cdn-icons-png.flaticon.com/512/4400/4400629.png"
+      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgaGVpZ2h0PSIzNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iMS43NSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1sb2ctb3V0Ij48cGF0aCBkPSJNOSAyMUg1YTIgMiAwIDAgMS0yLTJWNWEyIDIgMCAwIDEgMi0yaDQiLz48cG9seWxpbmUgcG9pbnRzPSIxNiAxNyAyMSAxMiAxNiA3Ii8+PGxpbmUgeDE9IjIxIiB4Mj0iOSIgeTE9IjEyIiB5Mj0iMTIiLz48L3N2Zz4="
       alt="logout"
       id="buttonLogout"
     />
@@ -40,12 +36,12 @@ const addListeners = () => {
     document.body.classList.toggle("dark"); //! añadir .dark al css general y asi me cambia fondo.
   });
 
-  const changeColor = document.getElementById("changeColor");
-  changeColor.addEventListener("click", (e) => {
-    /** en este caso lo que hacemos el generar un color y cambiar el stylo del background del body */
-    const color = changeColorRGB();
-    document.body.style.background = color;
-  });
+  // const changeColor = document.getElementById("changeColor");
+  // changeColor.addEventListener("click", (e) => {
+  //   /** en este caso lo que hacemos el generar un color y cambiar el stylo del background del body */
+  //   const color = changeColorRGB();
+  //   document.body.style.background = color;
+  // });
 
   const buttonDashboard = document.getElementById("buttonDashboard");
   buttonDashboard.addEventListener("click", (e) => {
