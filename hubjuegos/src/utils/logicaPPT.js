@@ -1,25 +1,18 @@
-//! me traigo, los states y de la data el []
-
 import {
   gettiradaOrdenador,
   settiradaOrdenador,
 } from "../global/state/logicaPPT.state";
 import { opciones } from "../global/data/logicaPPT.data";
-//!  EXPORT DE TODA LA LÓGICA AL INDEX DE BARRIL, PARA LLEVARLA A PÁGINA DE JUEGO.
 
 export const jugada = () => {
-  opciones; //! viene de data, para comparar posiciones con elección
-  let tiradaJugador = 0; //! no const para poderla modificar con click
+  opciones;
+  let tiradaJugador = 0;
 
   const obtenerResultado = () => {
-    settiradaOrdenador(); //! viene de state, crea un nº aleatorio entre 0 y 2, para comparar con [] de opciones
-    let tiradaOrdenador = gettiradaOrdenador(); //! lo trae de state y hace el random
+    settiradaOrdenador();
+    let tiradaOrdenador = gettiradaOrdenador();
 
-    // setTimeout(() => {
-    //   tiradaOrdenador(); // Llama a la función tiradaOrdenador después de 5000 milisegundos (5 segundos)
-    // }, 5000);
-
-    console.log("Ordenador:", opciones[tiradaOrdenador]); //! para verlo por consola
+    console.log("Ordenador:", opciones[tiradaOrdenador]); // para ver tirada por consola
     if (tiradaOrdenador === tiradaJugador) {
       return `Empate !`;
     } else if (
@@ -32,18 +25,14 @@ export const jugada = () => {
       return `Gana el ordenador !`;
     }
   };
-  //! función para escribir en el div de resultado:
 
   const mostrarResultado = () => {
-    //! apunto al elemento en el DOM
+    const resultado = obtenerResultado();
+    console.log(resultado); // para ver resultado por consola
 
-    const resultado = obtenerResultado(); //! DEL RETURN DE LA FUNCION DE ARRIBA
-    console.log(resultado); //! para verlo por consola
-
-    resultadoMostrado.textContent = resultado; //! AÑADO EL TEXTO DEL RETURN EN "RESULTADO" DEL DOM
+    resultadoMostrado.textContent = resultado;
   };
 
-  //! función para escribir el resultado del ordenador en el p:
   const mostrarResultadoOrdenador = () => {
     const resultadoMostradoOrdenador = document.getElementById("ordenador");
 
@@ -52,12 +41,11 @@ export const jugada = () => {
     }`;
   };
 
-  //! SELECCIÓN DE ELEMENTOS PINTADOS: LO HE MIRADO DE LA LOGICA DEL 3 EN RAYA
-  const eleccionPiedra = document.getElementById("btn1"); //! primer boton será piedra, que en [] será 0
-  const eleccionPapel = document.getElementById("btn2"); //! segundo boton será papel, que en [] será 1
-  const eleccionTijera = document.getElementById("btn3"); //! tercer boton será tijera, que en [] será 2
+  const eleccionPiedra = document.getElementById("btn1");
+  const eleccionPapel = document.getElementById("btn2");
+  const eleccionTijera = document.getElementById("btn3");
   const resultadoMostrado = document.getElementById("resultado");
-  //! ESCUCHADORES A LOS BOTONES, CON LA CONDICIÓN DEL let tiradajugador.
+
   eleccionPiedra.addEventListener("click", () => {
     tiradaJugador = 0;
     mostrarResultado();

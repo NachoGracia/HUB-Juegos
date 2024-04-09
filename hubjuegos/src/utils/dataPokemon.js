@@ -7,7 +7,7 @@ let dataGlobal;
 export const dataPokemon = async () => {
   const rawData = [];
 
-  for (let i = 1; i < 151; i++) {
+  for (let i = 1; i < 60; i++) {
     rawData.push(await getByIdPokemon(i));
   }
 
@@ -15,7 +15,7 @@ export const dataPokemon = async () => {
 };
 
 const dataMap = (data) => {
-  const filterData = data.map((pokemon) => ({
+  const filterData = data?.map((pokemon) => ({
     name: pokemon.name,
     image: pokemon.sprites.other.dream_world.front_default,
     type: pokemon.types,

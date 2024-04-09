@@ -1,4 +1,3 @@
-// pokemon.service.js ------> src/services/pokemon.service.js
 import { axiosUtil } from "../utils";
 
 export const getByIdPokemon = async (id) => {

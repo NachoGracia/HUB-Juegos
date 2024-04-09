@@ -30,7 +30,7 @@ export const Paginacion = (data, numberElement) => {
 
 const addListeners = (buttonNumber, data, numberElement, i) => {
   buttonNumber.addEventListener("click", () => {
-    console.log("entro");
+   
 
     const allButtonPag = document.querySelectorAll(".buttonPaginacion");
 
